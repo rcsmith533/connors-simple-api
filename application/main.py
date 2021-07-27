@@ -6,7 +6,7 @@ app = Flask(__name__)
 api = Api(app)
 
 def loadFile():
-    with open('application\\MOCK_DATA.json','rb') as f:
+    with open('application\MOCK_DATA.json','rb') as f:
         data = json.load(f)
         return data
 
