@@ -23,3 +23,4 @@ api.add_resource(myAPI,'/api')
 @app.after_request
 def after_request(response):
     response.headers.add('Access-Control-Allow-Origin','*')
+    return response
